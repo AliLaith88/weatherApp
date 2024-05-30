@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="output.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
+  </head>
+  <body class="flex items-center justify-around min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h1 class="text-2xl font-bold mb-6 text-center">Weather Form</h1>
+      <form>
+        <label for="location-input" class="block text-gray-700 mb-2"
+          >Location</label
+        >
+        <input
+          type="text"
+          name="location"
+          id="location-input"
+          class="border border-red-800 p-2 w-full rounded mb-4"
+        />
+        <button
+          id="submit-btn"
+          class="w-full bg-red-800 text-white p-2 rounded hover:bg-red-700"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div id="weather-box" class="flex flex-row">
+      <div
+        id="weather-info"
+        class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
+      >
+        <p>Location: <span id="location-placeholder"></span></p>
+        <p>Temp-c: <span id="tempC-placeholder"></span></p>
+        <p>Temp-f: <span id="tempF-placeholder"></span></p>
+        <p>Temp: <span id="temp-placeholder"></span></p>
+        <p>Humidity: <span id="humidity-placeholder"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
